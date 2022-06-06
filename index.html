@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>CODE4</title>
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button id="menubutton"><img id="hamburger" src="images/icons/hamburger.png" alt=""></button>
+            <div class="dropdown-content">
+            <a href="#robotica">Robótica na TI<img src="images/icons/robot.png" alt=""class="nav-icons"></a>
+            <a href="#roteiro">Roteiro<img src="images/icons/paper.png" alt="" class="nav-icons"></a>
+            <a href="#equipe">Equipe<img src="images/icons/team.png" alt="" class="nav-icons"></a>
+            <a href="#tinkercad" class="nav-links"><img id="tinkercad-icon" src="images/icons/tinkercad.png" alt="" class="nav-icons">Tinkercad</a>
+            <li><a href="#componentes" class="nav-links"><img src="images/icons/componentes.png" alt="" class="nav-icons">Componentes</li>
+            </div>
+        </div>
+
+        <div id="logo-div">
+            <a href="index.html"><img id="logo" src="code4_main_logo copy.png" alt="" id="code4-logo"></a>
+        </div>
+          
+        <nav>
+            <ul>
+                <li><a class="nav-links" href="#robotica"><img src="images/icons/robot.png" alt=""class="nav-icons">Robotica na TI</a></li>
+                <li><a href="#roteiro" class="nav-links"><img src="images/icons/paper.png" alt="" class="nav-icons">Roteiro</a></li>
+                <li><a href="#tinkercad" class="nav-links"><img id="tinkercad-icon" src="images/icons/tinkercad.png" alt="" class="nav-icons">Tinkercad</a></li>
+                <li><a href="#componentes" class="nav-links"><img src="images/icons/componentes.png" alt="" class="nav-icons">Componentes</li>
+                <li><a href="#equipe" class="nav-links"><img src="images/icons/team.png" alt="" class="nav-icons">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overview bg-dark">
+        <div id="content">
+            <div id="robotica">
+                <div class="titulo-div">
+                    <div class="titulo">Por que a</div> <br>
+                    <div class="titulo">robótica na TI?</div>
+                </div>
+    
+                <div class="video-div">
+                    <div class="video-info">
+                        <span class="data">22/04/2022</span>
+                        <span class="data" id="topic">Video</span>
+                    </div>
+                    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/RPcJFZxlb60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+    
+                <div id="roteiro">
+                    <div class="titulo" id="roteiro-titulo">Roteiro do video</div>
+                    <div class="video-info">
+                        <span class="data">22/04/2022</span>
+                        <span class="data" id="topic">Texto</span>
+                    </div>
+                    <p class="section-text">
+                        O roteiro do vídeo foi dividido em vários temas, onde cada membro do nosso grupo escolheu os temas que iriam falar no vídeo, fez uma pesquisa na internet e gravou a sua parte.
+                    </p>
+    
+                    <p class="section-text">
+                        O vídeo começa com o membro João Vitor fazendo a introdução sobre a robótica, em seguida nosso membro Erik Kleer explica o conceito da palavra Robótica e TI, dando continuação ao vídeo, nosso membro Alexandre Salgado comenta sobre dois temas relacionados a robótica que são Industria 4.0 e Tecnologia e Mercado de Trabalho.
+                    </p>
+                    <p class="section-text" id="lastp">
+                        Os próximos temas Inteligência Artificial e os Principais Locais que a Robótica é Aplicada foram apresentados no vídeo pelo nosso integrante Enzo Mangini e por último nosso membro João Vitor encerra o vídeo falando sobre as Profissões na Área da robótica.
+                        O vídeo foi editado no programa Vegas Pro e postado no YouTube pelo nosso membro Enzo Mangini.
+                    </p>
+                </div>
+
+                <div id="tinkercad">
+                    <div class="titulo" id="roteiro-titulo">Tinkercad</div>
+                    
+                    <p class="section-text"> 
+                        O Tinkercad é um programa de modelagem 3D online gratuito que roda em um navegador da web.</p>
+                    <p class="section-text">
+                        Utilizamos a parte de cirquitos para montar nossos projetos com o Arduino.
+                    </p>
+                    <span class="data">22/04/2022</span>
+                    <span class="data" id=""topic>Semáforo</span>
+
+                    <span class="data" id="topic">Atividade Aula 6</span>
+                    
+                    <img id="imagem2" src="images/atividades/SEMÁFARO.jpg" class="d-block w-100" alt data-toggle="modal" data-target="#exampleModal">
+
+                    <div class="code_tinkercad">
+                        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=monokai&wt=none&l=text%2Fx-csrc&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15px&lh=144%25&si=false&es=2x&wm=false&code=void%2520setup%28%29%257B%250ApinMode%288%252C%2520OUTPUT%29%253B%2520%252F%252Fverde%250ApinMode%289%252C%2520OUTPUT%29%253B%2520%252F%252Famarelo%250ApinMode%2810%252C%2520OUTPUT%29%253B%2520%252F%252Fvermelho%250A%257D%250A%250Avoid%2520loop%28%29%257B%250AdigitalWrite%288%252C%2520HIGH%29%253B%250Adelay%285000%29%253B%250AdigitalWrite%288%252C%2520LOW%29%253B%250AdigitalWrite%289%252C%2520HIGH%29%253B%250Adelay%284000%29%253B%250AdigitalWrite%289%252C%2520LOW%29%253B%250AdigitalWrite%2810%252C%2520HIGH%29%253B%250Adelay%285000%29%253B%250AdigitalWrite%2810%252C%2520LOW%29%253B%250A%250A%257D%250A"
+  style="width: 680px; height: 498px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    </div>
+
+                    <span class="data">22/04/2022</span>
+                    <span class="data" id=""topic>Luz de Emergência</span>
+
+                    <span class="data" id="topic">Atividade Aula 7</span>
+                    
+                    <img id="imagem4" src="images/atividades/LUZ DE EMERGÊNCIA.jpg" class="d-block w-100" alt data-toggle="modal" data-target="#exampleModal">
+
+                    <div class="code_tinkercad">
+                        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=monokai&wt=none&l=text%2Fx-csrc&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15px&lh=144%25&si=false&es=2x&wm=false&code=int%2520led%2520%253D%252010%253B%2520%250Aint%2520ldr%2520%253D%2520A0%253B%2520%250Aint%2520valorldr%2520%253D%25200%253B%250A%250Avoid%2520setup%28%29%2520%257B%250A%2520%2520pinMode%2520%28led%252C%2520OUTPUT%29%253B%2520%250A%2520%2520pinMode%2520%28ldr%252C%2520INPUT%29%253B%2520%2520%2520%250A%2520%2520Serial.begin%289600%29%253B%2520%250A%257D%250Avoid%2520loop%28%29%2520%257B%250A%2520%2520%2520valorldr%2520%253D%2520analogRead%2520%28ldr%29%253B%250A%2520%2520%2520Serial.println%28valorldr%29%253B%250A%2520%2520%2520%250A%2520%2520%2520if%28%28valorldr%29%2520%253C%2520500%29%257B%2520%250A%2520%2520%2520%2520digitalWrite%28led%252C%2520HIGH%29%253B%250A%2520%2520%257D%2520%2520%250A%2520%2520else%257B%2520%250A%2520%2520%2520%2520digitalWrite%28led%252C%2520LOW%29%253B%250A%2520%2520%257D%2520%2520%250A%257D%250A"
+  style="width: 680px; height: 527px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    </div>
+
+                    <span class="data">22/04/2022</span>
+                    <span class="data" id=""topic>1 Motor DC</span>
+
+                    <span class="data" id="topic">Atividade Aula 8</span>
+                    
+                    <img id="imagem1" src="images/atividades/1 MOTOR DC.jpg" class="d-block w-100" alt data-toggle="modal" data-target="#exampleModal">
+
+
+                    <span class="data">22/04/2022</span>
+                    <span class="data" id=""topic>2 Motor DC</span>
+
+                    <span class="data" id="topic">Atividade Aula 9</span>
+                    
+                    <img id="imagem2" src="images/atividades/2 MOTOR DC.jpg" class="d-block w-100" alt data-toggle="modal" data-target="#exampleModal">
+
+                    <div class="code_tinkercad">
+                        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=monokai&wt=none&l=text%2Fx-csrc&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15px&lh=144%25&si=false&es=2x&wm=false&code=%252F%252FMotor%2520A%250Aconst%2520int%2520motorPin1%2520%2520%253D%25205%253B%2520%250Aconst%2520int%2520motorPin2%2520%2520%253D%25206%253B%2520%250A%252F%252FMotor%2520B%250Aconst%2520int%2520motorPin3%2520%2520%253D%252010%253B%250Aconst%2520int%2520motorPin4%2520%2520%253D%25209%253B%2520%2520%250A%250Avoid%2520setup%28%29%250A%257B%250A%2520pinMode%28motorPin1%252C%2520OUTPUT%29%253B%250A%2520pinMode%28motorPin2%252C%2520OUTPUT%29%253B%250A%2520pinMode%28motorPin3%252C%2520OUTPUT%29%253B%250A%2520pinMode%28motorPin4%252C%2520OUTPUT%29%253B%250A%2520pinMode%28A5%252C%2520INPUT_PULLUP%29%253B%250A%2520pinMode%28A4%252C%2520INPUT_PULLUP%29%253B%250A%2520pinMode%28A3%252C%2520INPUT_PULLUP%29%253B%250A%2520%2520%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%2520%28digitalRead%28A4%29%2520%253D%253D%2520HIGH%29%257B%250A%2520%2520digitalWrite%285%252C%2520HIGH%29%253B%250A%2520%2520digitalWrite%286%252C%2520LOW%29%253B%250A%2520%2520digitalWrite%2810%252C%2520HIGH%29%253B%250A%2520%2520digitalWrite%289%252C%2520LOW%29%253B%250A%2520%2520%2520%2520%250A%2520%2520%257D%2520%250A%2520%2520else%257B%250A%2520%2520digitalWrite%285%252C%2520LOW%29%253B%250A%2520%2520digitalWrite%286%252C%2520HIGH%29%253B%250A%2520%2520digitalWrite%2810%252C%2520LOW%29%253B%250A%2520%2520digitalWrite%289%252C%2520HIGH%29%253B%250A%2520%257D%250A%2520%2520%257B%250A%2520%2520if%2520%28digitalRead%28A3%29%2520%253D%253D%2520LOW%29%257B%250A%2520%2520digitalWrite%285%252C%2520HIGH%29%253B%250A%2520%2520digitalWrite%286%252C%2520LOW%29%253B%250A%2520%2520digitalWrite%2810%252C%2520LOW%29%253B%250A%2520%2520digitalWrite%289%252C%2520HIGH%29%253B%250A%2520%2520delay%282000%29%253B%250A%2520%2520%257D%2520%250A%2520%2520%257B%250A%2520%2520if%2520%28digitalRead%28A5%29%2520%253D%253D%2520LOW%29%257B%250A%2520%2520digitalWrite%285%252C%2520LOW%29%253B%250A%2520%2520digitalWrite%286%252C%2520HIGH%29%253B%250A%2520%2520digitalWrite%2810%252C%2520HIGH%29%253B%250A%2520%2520digitalWrite%289%252C%2520LOW%29%253B%250A%2520%2520delay%282000%29%253B%250A%2520%2520%257D%2520%250A%257D%250A%257D%250A%257D%250A"
+  style="width: 680px; height: 1240px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    </div>
+                            
+                        
+                </div>
+                <div class="titulo" id="componentes" >Componentes</div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col order-last">
+                            <div class="card  text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">Arduino</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+                                        <img src="./images/componentes/arduino.png" width="150 " height="125 " alt="Arduino "><br> Hardware/OpenSource de prototipagem eletrônica, possui suporte para Saída/Entrada de dados de forma nativa, baseado em C/C++.
+                                        
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">Placa de Ensaio</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+                                        <img src="./images/componentes/placadeensaio.png " width="150 " height="125 " alt="Placa de ensaio pequena "><br> Placa com buracos, ultilizada em protótipos de circuitos elétricos/eletrônicos para testes.
+                                        
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-block order-first">
+                            <div class="card text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">Motor CC(DC)</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+                                        <img src="./images/componentes/motorcc.png" width="150 " height="125 " alt="Motor CC "><br> De forma geral, os motores CC, de corrente contínua, são dispositivos que convertem energia elétrica em energia mecânica, gerando uma rotação no seu eixo.
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="col order-last">
+                            <div class="card text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">Resistor</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+        
+                                        <img src="./images/componentes/resistor.png" width="150 " height="125 " alt="Resistor "><br> Limita o fluxo de pulsos eletrícos através da conversão de eletrícidade para energia térmica.
+                                        
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">LED</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+                                        <img src="./images/componentes/led.png" width="150 " height="125 " alt="LED "><br> Converte tensão elétrica, das tomadas em um modo reduzido, que é sustido pelos componentes.
+                                        
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col order-first">
+                            <div class="card text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">Fotorresistor</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+                                        <img src="./images/componentes/fotorresistor.png" width="150 " height="125 " alt="Fotorresistor "><br> Limita a corrente elétrica que passar pelo mesmo (Ex: Resistor), diferenciando que ele se comunica com a luz.
+        
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="col order-last">
+                            <div class="card text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">Interruptor deslizante</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+                                        <img src="./images/componentes/interruptordeslizante.png" width="150 " height="125 " alt="Interruptor deslizante "><br> Alavanca que Abre/Fecha o caminho pela qual a eletrícidade passa, alternando o funcionamento dos componentes.
+                                        <br><br><br><br>
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">Bateria 9V</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+                                        <img src="./images/componentes/bateria9v.png" width="150 " height="125 " alt="Bateria 9V "><br> Proporciona energia(alimenta), aos componentes.
+        
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col order-first">
+                            <div class="card text-white bg-dark mb-sm-3" style="max-width: 28rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title text-center">Fonte de energia</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class=" text-light text-center">
+                                        <img src="./images/componentes/fontedeenergia.png" width="150 " height="125 " alt="Fonte de energia "><br> Converte a tensão da tomada para não queimar os componentes ou gerar problemas.
+                                        <br><br><br><br>
+                                    </p>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+            <br>
+                 <br>
+                <div class="titulo" id="equipe-titulo">Equipe</div>
+    
+                <div id="equipe">
+                    <div class="group-card">
+                         <img class="group-pfp" src="images/equipe/joao.jpeg" alt="joao">
+                         <h3 class="group-name">João Vitor</h3>
+                         <p class="group-description">Ajudou no desenvolvimento do site e ajudou no planejamento do roteiro.</p>
+                     </div>
+                    <div class="group-card">
+                        <img class="group-pfp" src="images/equipe/enzo.png" alt="enzo">
+                         <h3 class="group-name">Enzo</h3>
+                         <p class="group-description">Editou o video e ajudou no planejamento do site e roteiro.</p>
+                    </div>
+                    <div class="group-card">
+                        <img class="group-pfp" src="images/equipe/erik.png" alt="erik">
+                        <h3 class="group-name">Erik</h3>
+                        <p class="group-description">Criou a logo da equipe, ajudou no desenvolvimento do site e roteiro do video.</p>
+                    </div>
+                    <div class="group-card">
+                        <img class="group-pfp" src="images/equipe/alexandre.jpg" alt="alexandre">
+                        <h3 class="group-name">Alexandre</h3>
+                        <p class="group-description">Fez o planejamento do roteiro e ajudou no desenvolvimento do site.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity= "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="prism.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+
+
+
+</body>
+</html>

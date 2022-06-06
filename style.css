@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background-color1: #181819;
+    --background-title:#ed5735;
+    --text-color: #fff;
+    --title-text: #011826;
+}
+
+::selection {
+    background-color: #f9795c;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#img {
+    width: 300px;
+    height: 300px;
+
+}
+
+body{
+    background-color: #181819;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    background-color: #101010;
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    padding: 10px 30px;
+}
+
+#logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 65px auto;
+}
+
+#logo {
+    max-width: 120px;
+    margin-top: 20px;
+}
+
+nav {
+    width: 100%;
+}
+
+li {
+    margin-bottom: 30px;
+    list-style-type: none;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    opacity: 0.85;
+}
+
+li:hover {
+    opacity: 1.0;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.nav-links:hover {
+    opacity: 1;
+    color: white;
+}
+
+.nav-icons {
+    max-width: 17px;
+    margin-right: 7px;
+}
+
+#content {
+    padding: 20px 20px 20px 290px;
+}
+
+#robotica {
+    max-width: 570px;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.titulo-div {
+    min-width: 200px;
+    margin: auto auto 45px auto;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.titulo {
+    display: inline-block;
+
+    font-size: 29px;
+    font-weight: bold;
+
+    background-color: var(--background-title);
+    color: var(--title-text);
+
+    padding: 5px 10px;
+    margin-bottom: 13px;
+}
+
+.video-div, #roteiro {
+    margin-bottom: 60px;
+}
+
+.video-info {
+    display: flex;
+}
+
+.data {
+    display: inline-block;
+    background-color: #f9795c;
+    font-size: 13px;
+    color: var(--title-text);
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-right: 4px;
+}
+
+iframe {
+    width: 100%;
+}
+
+#topic {
+    background-color: #DFEBF2;
+}
+
+#roteiro-titulo, #equipe-titulo {
+    margin-bottom: 45px;
+}
+
+p {
+    font-size: 17px;
+    color: var(--text-color);
+    line-height: 1.5;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+#codigo {
+    color: black;
+}
+
+#lastp {
+    margin-bottom: -15px;
+}
+
+#equipe {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 10px; 
+    grid-template-areas: 
+        ". ."
+        ". ."; 
+}
+
+@media (max-width: 450px) {
+    #equipe {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 20px 10px; 
+        grid-template-areas: 
+            ". "
+            ". "; 
+    }
+}
+
+.group-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group-pfp {
+    max-width: 145px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #f39a869e;
+
+}
+
+.group-name {
+    color: var(--text-color);
+    opacity: 0.75;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.group-description {
+    text-align: center;
+    max-width: 170px;
+    font-weight: 300;
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+#menubutton {
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown {
+    display: none;
+}
+
+#hamburger {
+    width: 24px;
+}
+
+
+@media (max-width: 770px) {
+    header {
+        width: 100%;
+        height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        position: relative;
+        top: 0;
+        z-index: 3;
+        padding: 10px 30px;
+
+        background-color: #101010;
+    }
+
+    #logo-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .nav-icons {
+        margin-left: 7px;
+    }
+
+    #logo {
+        max-width: 50px;
+        margin-top: 0px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #content {
+        padding: 20px;
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 140px;
+        overflow: auto;
+        height: 100px;
+        z-index: 11;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content a {
+        display: block;
+        color: var(--text-color);
+        padding: 5px;
+        text-decoration: none;
+        background-color: var(--background-color1);
+        font-size: 13px;
+        font-weight: 400;
+    
+    }
+    .dropdown-content a:hover {
+        color: #FFFFFF;
+    }
+
+    #roteiro {
+        border-bottom: none;
+    }
+}
+
+.code_tinkercad {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+iframe {
+    width: 80%;
+    overflow-x: auto;
+}
+
+
+#zuado {
+    margin-bottom: 25px;;
+}
+
+#imagem1, #imagem2, #imagem3, #imagem4 {
+    margin-bottom: 25px;
+}
+
+#tinkercad-icon {
+    filter: saturate(0);
+}
